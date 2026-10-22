@@ -1,10 +1,7 @@
 import rooms from "../data/rooms.js";
 import RoomCard from "./RoomCard.jsx";
-import { useState } from "react";
 
-function Rooms() {
-  const [selectedRoom, setSelectedRoom] = useState(null);
-
+function Rooms({ selectedRoom, setSelectedRoom }) {
   return (
     <section className="rooms">
       <h2>Available Rooms</h2>
