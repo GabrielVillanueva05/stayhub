@@ -4,6 +4,9 @@ nav {
   justify-content: space-between;
   padding: 12px 24px;
   margin: 0;
+
+  background-color: var(--surface);
+  color: var(--text-h);
 }
 
 nav ul {
@@ -20,4 +23,10 @@ nav li {
 nav a {
   text-decoration: none;
   color: var(--text-h);
+}
+
+nav h1 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 600;
 }
