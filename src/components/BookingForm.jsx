@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./BookingForm.css";
 
 function BookingForm({ selectedRoom }) {
   const [checkInDate, setCheckInDate] = useState("");
@@ -18,32 +19,47 @@ function BookingForm({ selectedRoom }) {
   }
 
   return (
-    <>
-      <label htmlFor="checkInDate">Check-in Date:</label>
-      <input
-        type="date"
-        id="checkInDate"
-        value={checkInDate}
-        onChange={(e) => setCheckInDate(e.target.value)}
-      />
-      <p>Check-in: {checkInDate}</p>
-      <label htmlFor="checkOutDate">Check-out Date:</label>
-      <input
-        type="date"
-        id="checkOutDate"
-        value={checkOutDate}
-        onChange={(e) => setCheckOutDate(e.target.value)}
-      />
-      <p>Check-out: {checkOutDate}</p>
+    <section className="booking-form">
+      <h2>Complete Your Stay</h2>
 
-      <p>{difference}</p>
+      <div className="booking-content">
+        <div className="booking-dates">
+          <label htmlFor="checkInDate">Check-in Date:</label>
+          <input
+            type="date"
+            id="checkInDate"
+            value={checkInDate}
+            onChange={(e) => setCheckInDate(e.target.value)}
+          />
 
-      <p>
-        {selectedRoom && typeof difference === "number"
-          ? `Price: $${selectedRoom.price * difference}`
-          : null}
-      </p>
-    </>
+          <label htmlFor="checkOutDate">Check-out Date:</label>
+          <input
+            type="date"
+            id="checkOutDate"
+            value={checkOutDate}
+            onChange={(e) => setCheckOutDate(e.target.value)}
+          />
+        </div>
+
+        <div className="booking-summary">
+          <h3>Booking Summary</h3>
+
+          <p>Room: {selectedRoom ? selectedRoom.name : "None selected"}</p>
+
+          <p>Nights: {typeof difference === "number" ? difference : "-"}</p>
+
+          {typeof difference === "string" && (
+            <p className="booking-error">{difference}</p>
+          )}
+
+          <p className="booking-total">
+            {selectedRoom && typeof difference === "number"
+              ? `Total: $${selectedRoom.price * difference}`
+              : "Select a room and valid dates"}
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }
 

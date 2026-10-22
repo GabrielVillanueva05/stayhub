@@ -1,0 +1,12 @@
+.rooms {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.rooms > h2 {
+  text-align: center;
+  color: var(--text-h);
+  font-size: 32px;
+  margin-bottom: 32px;
+}

@@ -1,6 +1,6 @@
 import rooms from "../data/rooms.js";
 import RoomCard from "./RoomCard.jsx";
-
+import "./Rooms.css";
 function Rooms({ selectedRoom, setSelectedRoom }) {
   return (
     <section className="rooms">
@@ -16,8 +16,6 @@ function Rooms({ selectedRoom, setSelectedRoom }) {
           />
         );
       })}
-
-      <h2>Selected Room: {selectedRoom ? selectedRoom.name : "None"}</h2>
     </section>
   );
 }

@@ -1,3 +1,7 @@
+import deluxeKing from "../assets/hotel-king-room.jpg";
+import twoQueens from "../assets/hotel-queens-room.jpg";
+import twoFull from "../assets/hotel-fulls-room.jpg";
+
 const rooms = [
   {
     id: 1,
@@ -5,6 +9,7 @@ const rooms = [
     price: 189,
     capacity: 2,
     description: "Spacious room with ocean views",
+    image: deluxeKing,
   },
 
   {
@@ -13,6 +18,7 @@ const rooms = [
     price: 169,
     capacity: 4,
     description: "Spacious room with ocean views",
+    image: twoQueens,
   },
 
   {
@@ -21,6 +27,7 @@ const rooms = [
     price: 129,
     capacity: 2,
     description: "Spacious room with ocean views",
+    image: twoFull,
   },
 ];
 
