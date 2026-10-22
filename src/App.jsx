@@ -3,7 +3,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <p>Stay Hub</p>
+      <h1>Stay Hub</h1>
       <p>Find your perfect stay </p>
     </>
   );
