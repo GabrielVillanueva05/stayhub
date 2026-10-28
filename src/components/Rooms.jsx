@@ -3,7 +3,7 @@ import RoomCard from "./RoomCard.jsx";
 import "./Rooms.css";
 function Rooms({ selectedRoom, setSelectedRoom }) {
   return (
-    <section className="rooms">
+    <section id="rooms" className="rooms">
       <h2>Available Rooms</h2>
 
       {rooms.map((room) => {

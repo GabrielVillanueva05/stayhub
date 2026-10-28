@@ -16,6 +16,9 @@ function App() {
       <Weather />
       <Rooms selectedRoom={selectedRoom} setSelectedRoom={setSelectedRoom} />
       <BookingForm selectedRoom={selectedRoom} />
+      <footer id="contact">
+        <p>Contact StayHub: contact@stayhub.example</p>
+      </footer>
     </>
   );
 }

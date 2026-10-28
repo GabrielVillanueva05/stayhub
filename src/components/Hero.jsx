@@ -2,7 +2,7 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <div className="hero">
+    <div id="home" className="hero">
       <h2>Find Your Perfect Stay</h2>
 
       {/* Edit this message later in your own words */}
@@ -12,7 +12,9 @@ function Hero() {
         hotel, or a charming bed and breakfast, we've got you covered.
       </p>
 
-      <button className="exploreBtn"> Explore Rooms</button>
+      <a href="#rooms" className="exploreBtn">
+        Explore Rooms
+      </a>
     </div>
   );
 }
