@@ -7,32 +7,36 @@ Created by: **Gabriel Villanueva**
 [Click here](https://stayhubsample.netlify.app/)
 
 
-**Stay Hub** is a web application where users can look through a catalog of products, choose which to add to cart, and manipulate quantities and totals at the cart. There is also login/signup functionality implemented using supabase database. The final page of the app, is a demo order where the app returns the confirmed order as a browser alert.
+**Stay Hub** is a web application of a demo hotel company, users are greeted with a message on a hero section, and a button directs them to explore different hotel room options. There is a small card that allows users to view the current temperature at their destination, and then Available rooms are listed in a vertical display of cards. Users can pick between 3 different options, and finally complete their reservation by selecting check in and check out dates and clicking the Reserve Room button.
+
+## Tech Stack
+
+- **Frontend:** React, JavaScript, HTML, CSS, Vite
+- **Backend:** Netlify Serverless Functions
+- **Database:** Supabase (PostgreSQL)
+- **APIs:** Open-Meteo Weather API
+- **Deployment:** Netlify
+- **Version Control:** Git and GitHub
 
 ## Features
 
 The following functionality is completed:
 
-* [x] A card grid displaying backend product data such as images, product title, price and product description.
-* [x] A navigation bar where users are able to access light/dark mode, cart, return to home, or move to signup/login pages.
-* [x] A cart page where users are able to view items that are in cart, their respective price and quantity. A cart summary also displays similar data but also including a order total section where shipping and tax are included.
-* [x] A checkout page where the order summary is displayed with items and their quantities, a total amount in US dollar, a disclaimer demo message and a button where the user can place a sample order.
-* [x] A footer that is fixed to the bottom of the screen where users can access the same navigation links as the navigation bar, a small company message and a real gmail to contact me.
-
+* [x] A navigation bar where users can move to the home, rooms or contact part of the webpage.
+* [x] A hero section with a welcome message and a button directing the user to the room section.
+* [x] A card displaying the current weather of the city that the user enters, this card is operating with an API.
+* [x] A vertical card display showing different room options, their cost and a small description of the room.
+* [x] A Booking summary card, where the user picks the dates they will like to check in and check out from, and a summary of their selected choices and the total cost.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src="./ecomhub.gif" alt="EcommerceHub Demo" width="700">
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with **ezgif.com**
+
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The most challenging aspect of creating this application was ensuring the weather API worked correctly, and that date selections were checked to make sure they made sense and realsitic.
