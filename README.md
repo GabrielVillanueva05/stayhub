@@ -32,7 +32,7 @@ The following functionality is completed:
 
 Here's a walkthrough of implemented features:
 
-<img src="./ecomhub.gif" alt="EcommerceHub Demo" width="700">
+<img src="./stayhub.gif" alt="EcommerceHub Demo" width="700">
 
 GIF created with **ezgif.com**
 
