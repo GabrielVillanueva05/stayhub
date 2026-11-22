@@ -27,6 +27,7 @@ The following functionality is completed:
 * [x] A card displaying the current weather of the city that the user enters, this card is operating with an API.
 * [x] A vertical card display showing different room options, their cost and a small description of the room.
 * [x] A Booking summary card, where the user picks the dates they will like to check in and check out from, and a summary of their selected choices and the total cost.
+* [x] A reservation system using Netlify Serverless Functions and supabase PostgreSQL to save bookings, validate reservation dates, and handle conflicting reservations.
 
 ## Video Walkthrough
 
